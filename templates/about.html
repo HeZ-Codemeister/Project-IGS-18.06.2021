@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!-- JUMBOTRON -->
+<section class="my-jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Made by Jody Hezekiah Tanasa Sagala.</h1>
+      <a href="{{ url_for('create') }}" class="btn btn-primary my-button">Create Note</a>
+    </div>
+  </div>      
+</section>
+<!-- END JUMBOTRON -->
+
+{% endblock %}

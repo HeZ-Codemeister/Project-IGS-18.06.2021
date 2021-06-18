@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome to Note App{% endblock %}
+
+{% block content %}
+<!-- JUMBOTRON -->
+<section class="my-jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Welcome to my Note App. <span>Post, Delete, or Edit</span> your notes without difficulty.</h1>
+      <a href="{{ url_for('create') }}" class="btn btn-primary my-button">Create Note</a>
+    </div>
+  </div>      
+</section>
+<!-- END JUMBOTRON -->
+
+<!-- PANEL -->
+<section class="my-panel">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-10 my-info-panel">
+        <div class="row">
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/fast.jpg') }}" alt="fast" class="float-left">
+            <h4>Fast</h4>
+            <p>Saving your time</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/mobilized.jpeg') }}" alt="cool" class="float-left">
+            <h4>Mobilized</h4>
+            <p>Anytime, anywhere</p>
+          </div>
+          <div class="col-lg">
+            <img src="{{ url_for('static', filename='img/safe.jpg') }}" alt="simple" class="float-left">
+            <h4>Safe</h4>
+            <p>No doubt</p>
+          </div> 
+        </div>
+
+        
+      </div> 
+    </div>
+
+    <div class="row my-info-panel2">
+
+      <div class="col-lg-6">
+        <img src="{{ url_for('static', filename='img/comfort.jpeg') }}" alt="comfort" class="img-fluid">
+      </div>
+
+      <div class="col-lg-5">
+        <h3>You Enjoy With This Note</h3>
+        <p>Belajar, Bekerja Hal Baru Setiap Hari.</p>
+        <a href="#" class="btn btn-primary my-button">Find Out</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END PANEL -->
+{% endblock %}
